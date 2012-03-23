@@ -1,0 +1,20 @@
+﻿form {
+	margin-bottom: 0px;
+}
+	
+label, .label-80 {
+	width: 140px;
+}
+
+#content #message_input {
+	width: 432px;
+}
+
+.portfolio-image-selected
+{
+	border-style: groove;
+	border-width: 1px;
+	border-color: inherit;
+	padding: 5px;
+	background-color: #F9F9F9;
+}

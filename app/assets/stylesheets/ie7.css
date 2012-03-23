@@ -1,0 +1,31 @@
+body {
+	padding: 0;
+	margin-bottom: 0px;
+}
+#navigation {
+	margin-top: -23px;
+}
+
+.sf-menu li.sfHover ul {
+	background: url(../images/dropdown_top_ie.png) no-repeat right top;
+}
+
+.sf-menu li li {
+	background: url(../images/dropdown_bg_ie.png) repeat-y right top;
+}
+
+.sf-menu li li.last {
+	background: url(../images/dropdown_end_ie.png) no-repeat right bottom;
+}
+
+.sf-menu li li li {
+	background: url(../images/dropdown_bg_ie.png) repeat-y right top;
+}
+
+.sf-menu li li li.last {
+	background: url(../images/dropdown_end_ie.png) no-repeat right bottom;
+}
+
+#message_input {
+	width: 210px;
+}

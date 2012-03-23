@@ -1,0 +1,55 @@
+<div id="content">
+					<!-- Page Header -->
+					<div class="page">
+						<div class="left">
+							<h1>Contact Us</h1>
+						</div>
+						<div id="quote-container" class="right">
+							<!-- Quote Right-->
+							<div class="quote right">
+								<p>
+									Get in Touch
+								</p>
+							</div>						
+						</div>
+					</div>
+					<!-- BEGIN MAIN -->
+					<div id="main">
+
+						<p class="quote">
+							Please use the form below to get in touch with us if you have any suggestions, would like to report any bugs or just to say Hi!
+						</p>
+						
+						<div class="clear"></div>
+						<div class="divider-30"></div>
+						
+						<div id="feedback">
+							<p class="error wrong_name"> Fill the correct name</p>
+							<p class="error wrong_email"> Incorrect email</p>
+							<p class="error wrong_message"> Enter your message</p>
+						</div>
+						
+						<div id="note">
+							<span class="notification_ok">Your message has been sent. Thank you!</span>
+						</div>		
+						<form action="sendemail.php" id="contact_us" class="jqtransform" method="post">
+							
+							<div class="rowElem"><label>Name</label><input type="text" size="30" name="Name" id="name" title="Name" /></div>
+							<div class="rowElem"><label>E-Mail</label><input type="text" size="30" name="Email" id="email" title="Email" /></div>
+							<div class="rowElem"><label>Subject</label>
+								<select name="Subject" id="subject" class="contact-select">
+									<option value="opt1">Inquiry</option>
+									<option value="opt2">Suggestion</option>
+									<option value="opt3">Bug Report</option>
+									<option value="opt4">Other</option>
+								</select>
+							</div>
+							
+							<div class="rowElem"><label>Message</label><textarea cols="64" rows="7" name="Message" id="message_input"></textarea></div>
+							<div class="rowElem" id="contact-submit"><label>&nbsp;</label><input type="submit" value="Submit" class="jqbutton" /></div>
+						</form>
+		
+					</div>
+					<!-- END OF MAIN -->
+				
+				</div>

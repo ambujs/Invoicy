@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<!-- Theme Design by Arthur Gapusan from Themeforest.net -->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Invoicy 1</title>
+		<!--<%= stylesheet_link_tag    "application", :media => "all" %>-->
+		<link href="assets/style.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="assets/styleoverrides.css" rel="stylesheet" type="text/css" media="screen" />
+		<!--[if IE 7]>
+		<link href="assets/ie7.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<!--[if IE 8]>
+		<link href="assets/ie8.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+		<!-- jquery -->
+		<script type="text/javascript" src="assets/jquery-1.4.4.js"></script>
+		<!-- cufon script and font -->
+		<script type="text/javascript" src="assets/cufon-yui.js"></script>
+		<script type="text/javascript" src="assets/Kalinga_400-Kalinga_700.font.js"></script>
+		<!-- jqtransform script for forms -->
+		<script type="text/javascript" src="assets/jquery.jqtransform.js" ></script>
+		<!-- slider script -->
+		<script type="text/javascript" src="assets/infinite_carousel.js"></script>
+		<!-- superfish menu script -->
+		<script type="text/javascript" src="assets/hoverIntent.js"></script>
+		<script type="text/javascript" src="assets/superfish.js"></script>
+		<!-- PrettyPhoto script -->
+		<script type="text/javascript" src="assets/jquery.prettyPhoto.js"></script>
+		<!-- jquery carousel script -->
+		<script type="text/javascript" src="assets/jquery.jcarousel.min.js"></script>
+		<!-- testimonial accordion script -->
+		<script type="text/javascript" src="assets/testimonial_accordion.js"></script>
+		<!-- jquery form script for contact form -->
+		<script type="text/javascript" src="assets/jquery.form.js"></script>
+		<!-- vtip script -->
+		<script type="text/javascript" src="assets/vtip.js"></script>
+		<!-- initialization -->
+		<script type="text/javascript" src="assets/custom.js"></script>
+
+		
+		<script type="text/javascript" src="assets/app.js"></script>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="top-container">
+				<div id="top-content">
+				</div>
+				<!-- BEGIN NAVIGATION -->	
+				<div id="navigation">	
+					<div id="nav-menu">
+						<ul class="sf-menu">
+							<li class="first">
+								<%= link_to raw("<span class='span-main'>Home</span>"), { :controller => "welcome" }, :class => "main" %>
+							</li>
+							<li>
+								<%= link_to raw("<span class='span-main'>About</span>"), { :controller => "about" }, :class => "main" %>
+							</li>
+							<li class="last">
+								<%= link_to raw("<span class='span-main'>Contact</span>"), { :controller => "contact" }, :class => "main" %>
+							</li>	
+						</ul>
+					</div>
+				</div>
+				<!-- END OF NAVIGATION -->
+			</div>
+			<div id="header-container">
+				<div id="header">
+					<!-- BEGIN LOGO -->
+					<div id="logo">
+						<%= link_to raw("<img src='assets/logo.png' alt='logo' />"), { :controller => "welcome" } %>
+					</div>
+					<!-- END OF LOGO -->
+				</div>
+				<div class="hor-border"></div>
+			</div>	
+			<div class="clear"></div>	
+			<!-- BEGIN Content Container -->
+			<div id="content-container">
+				
+			
+			<%= yield %>
+
+				<div class="clear"></div>
+				<!-- BEGIN FOOTER -->
+				<div id="footer-container-boxed">
+					<div id="footer-boxed">
+						<div class="left">
+							<!-- Let's add margin of 5px from the top to align it with the logo on the right. -->
+							<!-- Margin classes can be found at section 4.4 -->
+							<p> 
+								Valid <a href="http://validator.w3.org/check?uri=referer" title="Validate XHTML"><acronym title="eXtensible Hypertext Markup Language">XHTML</acronym> Strict 1.0</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate CSS"><acronym title="Cascading Style Sheets">CSS</acronym></a><br />
+								&copy; Copyright 2009 Lightroom. All Rights Reserved.<br />
+							</p>
+						</div>
+						<div class="right">
+							<p class="margin-5-top"> 
+								<a href="#"><img src='assets/logo_footer.png' alt="footer logo" /></a>
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+					
+				</div>
+				<div class="clear"></div>
+				<!-- END FOOTER -->		
+				
+			</div>
+
+			<div class="clear"></div>
+			<!-- Bottom Background of main container -->
+			<div id="bottom-container">
+				<div id="bottom-content">
+				</div>
+			</div>
+			<!-- -->
+			<div class="clear"></div>	
+		</div>
+		<!-- Initialize contact form script -->
+		<script type="text/javascript" src="assets/init_form.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("a[rel^='prettyPhoto']").prettyPhoto();
+			});
+		</script>
+
+	</body>
+</html>
